@@ -46,7 +46,7 @@ print("Accuracy:", accuracy_score(y_test, y_pred))
 print(classification_report(y_test, y_pred))
 
 # Predict probability of success (chance)
-success_proba = model.predict_proba(X_test)[:, 1]  # Probability for class 'True'
+success_proba = model.predict_proba(X_test)[:, 1] 
 
 # Get the corresponding movie titles for X_test
 X_test_with_titles = X_test.copy()
